@@ -1,0 +1,601 @@
+$reverse: #fff;
+$font-size-small: 12px;
+$screen-sm: 768px;
+
+.auth-title {
+    color: #168e1b;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px !important;
+    }
+}
+
+.body-auth {
+    // #content {
+    background-color: $body-bg;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    // }
+}
+
+.page-auth,
+.page-login,
+.page-signup,
+.page-forgot {
+    padding: 0 1rem 1rem;
+
+    .main-body {
+        max-width: 560px;
+        margin: -80px auto 0;
+
+        @include media-breakpoint-down(md) {
+            margin-top: 100px !important;
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 0 !important;
+        }
+    }
+
+    .body-inner {
+        position: relative;
+        padding: 20px;
+
+        &:before {
+            z-index: 0;
+            content: ' ';
+            line-height: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: $brand-primary;
+            height: 220px;
+        }
+    }
+
+    .additional-info {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        font-size: $font-size-small;
+
+        a {
+            color: $bright;
+        }
+
+        .divider-h {
+            border-right: 1px solid $bright;
+            margin: 0 15px;
+        }
+    }
+
+    .card {
+        border: none;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+
+        .card-content {
+            padding: 30px 20px;
+
+            .first-name,
+            .last-name {
+                width: 50%;
+            }
+
+            &:first-child {
+                border: 1px solid $gray-3;
+                -webkit-border-radius: .25rem .25rem 0 0;
+                -moz-border-radius: .25rem .25rem 0 0;
+                border-radius: .25rem .25rem 0 0;
+            }
+        }
+    }
+
+    .ui-input-group {
+        .form-control {
+            color: $gray;
+        }
+    }
+
+    .form-group {
+        position: relative;
+        margin: 0;
+    }
+
+    .wrapper {
+        margin-top: 50px;
+
+        @media (min-width: $screen-sm) {
+            margin-top: 150px;
+        }
+    }
+
+    .logo {
+        font-size: 26px;
+        font-weight: normal;
+        // text-transform: uppercase;
+
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .card {
+            margin-top: 0 !important;
+
+            .card-content {
+                padding: 0 5px !important;
+
+                hr {
+                    margin-top: initial;
+                    margin-bottom: initial;
+                }
+
+                .onboarding-text {
+                    display: none;
+                }
+
+                &:first-child {
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.page-confirm {
+    width: 100%;
+    height: 100%;
+
+    .main-body {
+        width: 90%;
+        max-width: unset;
+        height: 100%;
+        padding: 100px 0;
+        margin: 0 auto !important;
+        background: url('#{$image_path}/shape2.png') no-repeat center;
+        background-size: contain;
+        background-position-y: 80px;
+
+        .card {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .card-content {
+            padding: 30px 0;
+        }
+
+        @include media-breakpoint-down(sm) {
+            background-size: auto 20%;
+            background-position-y: 40%;
+        }
+    }
+}
+
+.logo-wrapper {
+    width: 110px;
+    line-height: 1;
+
+    .logo-title {
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: white;
+    }
+
+    .logo-subtitle {
+        font-size: 5px;
+        color: white;
+    }
+
+    .logo-limited {
+        font-size: 8px;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .auth-top {
+        min-height: calc(100vh - 115px);
+    }
+}
+
+.page-title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    @include media-breakpoint-down(md) {
+        top: 125% !important;
+    }
+
+    @include media-breakpoint-down(sm) {
+        transform: scale(2);
+        top: 140% !important;
+    }
+}
+
+.page-subtitle {
+    font-size: .875rem;
+    font-weight: 600;
+    color: $dark-3;
+
+    @include media-breakpoint-down(sm) {
+        color: #3c414d;
+    }
+}
+
+.help-block {
+    margin: .25rem 0 0;
+    display: block;
+    color: $dark-2;
+
+    .material-icons {
+        font-size: 1rem;
+        vertical-align: text-bottom;
+    }
+}
+
+.login-sidebar {
+    position: fixed;
+    width: calc(25% + 8px);
+    right: 0;
+    background-color: $purple-2;
+    overflow-x: hidden;
+
+    .brand img {
+        max-width: 100%;
+        max-height: 50px;
+    }
+
+    .social-login-title {
+        @include media-breakpoint-only(md) {
+            font-size: 1rem !important;
+        }
+    }
+
+    .social-icons {
+        margin: 1rem 0;
+
+        a:hover {
+            color: white !important;
+        }
+    }
+
+    .ask-frank {
+        width: 135px;
+    }
+
+    .questions {
+        border-bottom: 1px solid $purple-3;
+
+        a.active,
+        a:hover {
+            color: white !important;
+            text-decoration: none;
+        }
+    }
+
+    .d-lg-none {
+        .questions {
+            margin: 0 !important;
+            border: none !important;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        position: relative;
+        width: 100%;
+        min-height: 115px;
+    }
+}
+
+.shape-background {
+    position: absolute;
+    left: -30px;
+    top: 20px;
+    width: auto;
+    height: calc(100% - 20px);
+    z-index: 1;
+
+    & + div {
+        z-index: 2;
+    }
+}
+
+@keyframes train-move {
+    from {
+        left: -600px;
+    }
+    to {
+        left: calc(100% + 600px);
+    }
+}
+
+@keyframes blade-spin {
+    from {
+        @include r-transform(0deg);
+    }
+    to {
+        @include r-transform(360deg);
+    }
+}
+
+@keyframes light-opacity {
+    0% {
+        opacity: 0;
+    }
+    35% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes coin-move {
+    0% {
+        @include translateY(0);
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        @include translateY(100px);
+    }
+    100% {
+        @include translateY(100px);
+    }
+}
+
+@keyframes bird-move {
+    0% {
+        @include translateY(0);
+    }
+    50% {
+        @include translateY(10px);
+    }
+    100% {
+        @include translateY(0);
+    }
+}
+
+@keyframes cloud-move {
+    0% {
+        @include translateX(0);
+    }
+    40% {
+        @include translateX(30px);
+    }
+    80% {
+        @include translateX(0);
+    }
+    100% {
+        @include translateX(0);
+    }
+}
+
+.sign-animation {
+    padding-top: 100px;
+
+    @include media-breakpoint-down(sm) {
+        transform: scale(0.5);
+        transform-origin: 0 0;
+        width: 200%;
+    }
+
+    background: url('#{$image_path}/shape2.png') no-repeat center;
+    background-size: contain;
+
+    .sign-animation-left {
+        .plant-blade {
+            position: absolute;
+            top: -55px;
+            left: 204px;
+            @include linear-animation(blade-spin, 4s);
+        }
+
+        .light-opacity {
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            @include ease-animation(light-opacity, 6s);
+        }
+
+        .coin-mask {
+            position: absolute;
+            left: 68px;
+            top: -80px;
+            width: 60px;
+            height: 87px;
+            overflow: hidden;
+
+            .coin {
+                @include ease-animation(coin-move, 3s);
+            }
+        }
+
+        .birds-mask {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -50px;
+            bottom: 0;
+
+            .bird {
+                position: absolute;
+
+                &:first-child {
+                    left: 170px;
+                    top: 15px;
+                    @include ease-animation(bird-move, 3s);
+                }
+
+                &:nth-child(2) {
+                    left: 210px;
+                    top: -30px;
+                    @include ease-animation(bird-move, 4s);
+                }
+
+                &:nth-child(3) {
+                    left: 330px;
+                    top: 0;
+                    @include ease-animation(bird-move, 5s);
+                }
+            }
+
+            .cloud {
+                position: absolute;
+
+                &:nth-child(4) {
+                    left: 130px;
+                    top: 50px;
+                    @include ease-animation(cloud-move, 6s);
+                }
+
+                &:nth-child(5) {
+                    left: 360px;
+                    top: 20px;
+                    @include ease-animation(cloud-move, 7s);
+                }
+            }
+        }
+    }
+
+    .sign-animation-line {
+        height: 3px;
+        background: url('#{$image_path}/sign-anim-base-line.png') repeat bottom;
+        background-size: auto;
+    }
+
+    .sign-animation-right {
+        .birds-mask {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -50px;
+            bottom: 0;
+
+            .bird {
+                position: absolute;
+
+                &:first-child {
+                    left: 50px;
+                    top: 30px;
+                    @include ease-animation(bird-move, 3s);
+                }
+
+                &:nth-child(2) {
+                    left: 10px;
+                    top: 5px;
+                    @include ease-animation(bird-move, 4s);
+                }
+
+                &:nth-child(3) {
+                    left: -100px;
+                    top: 40px;
+                    @include ease-animation(bird-move, 5s);
+                }
+            }
+
+            .cloud {
+                position: absolute;
+
+                &:nth-child(4) {
+                    left: 60px;
+                    top: 50px;
+                    @include ease-animation(cloud-move, 6s);
+                }
+
+                &:nth-child(5) {
+                    left: -10px;
+                    top: 90px;
+                    @include ease-animation(cloud-move, 7s);
+                }
+
+                &:nth-child(6) {
+                    left: -200px;
+                    top: 70px;
+                    @include ease-animation(cloud-move, 8s);
+                }
+            }
+        }
+    }
+
+    .train-mask {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 112px;
+        overflow: hidden;
+
+        @include media-breakpoint-down(lg) {
+            right: 0;
+        }
+
+        .train {
+            position: absolute;
+            bottom: 0;
+            left: -500px;
+            right: 0;
+            @include linear-animation(train-move, 8s);
+        }
+    }
+}
+
+.mailbox-animation {
+    .mailbox {
+        width: 100px;
+        margin: 50px auto;
+    }
+
+    .cloud {
+        position: absolute;
+
+        &:nth-child(2) {
+            left: 60%;
+            top: 40px;
+            @include ease-animation(cloud-move, 3s);
+        }
+
+        &:last-child {
+            left: 80px;
+            top: 60px;
+            @include ease-animation(cloud-move, 5s);
+        }
+    }
+}
+
+.app-sidebar .sidebar-header {
+    margin-top: 25px;
+}
+
+.fixed-header .app-page-container .app-content-wrapper .app-content {
+    height: 100vh;
+    padding-top: 85px;
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 140px;
+    }
+}

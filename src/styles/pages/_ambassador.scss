@@ -1,0 +1,565 @@
+.page-dashboard {
+    .go-ambassador {
+        padding: 0 20px;
+    }
+
+    .go-ambassador-container {
+        position: relative;
+        padding: 40px;
+        background-color: #9e8bc1;
+        border-radius: 5px;
+        border-bottom: 10px solid #5ac1d3;
+        color: #fff;
+        overflow: hidden;
+
+        h2 {
+            font-size: 22px !important;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 600;
+            opacity: 0.5;
+        }
+    }
+
+    .go-ambassador-button {
+        &, &:link {
+            position: relative;
+            z-index: 10;
+            margin-top: 20px;
+            display: inline-block;
+            background-color: #fcdb19;
+            color: #5e6984 !important;
+            padding: 10px 20px;
+            border: 1px solid #fcdb19;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: all 300ms;
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: #fcdb19 !important;
+        }
+
+        i {
+            margin-left: 10px;
+        }
+    }
+
+    .go-ambassador-dashboard-link {
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        width: 250px;
+        height: 90px;
+        margin: 0 auto;
+        bottom: 150px;
+        text-align: center;
+
+        p {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #fff;
+            opacity: 1;
+        }
+    }
+
+    .go-ambassador-copy-button {
+        &, &:link {
+            position: relative;
+            z-index: 10;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: transparent;
+            border: 1px solid #bbc0cc;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #bbc0cc !important;
+            text-transform: uppercase;
+            transition: all 300ms;
+        }
+
+        i {
+            margin-right: 10px;
+        }
+
+        &:hover {
+            background-color: #fff;
+            //border-color: #fff;
+            color: #5e6984 !important;
+        }
+    }
+
+    .go-ambassador-history {
+        margin: 40px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div:first-child {
+            font-size: 14px;
+            font-weight: 700;
+            color: #47bed0;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        div:last-child {
+            font-size: 14px;
+            font-weight: 700;
+            color: #bbc0cc;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+            span {
+                color: #9e8bc1;
+            }
+        }
+    }
+
+    .go-ambassador-history-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        margin: 5px 0;
+        background-color: #f6f7f9;
+        border-radius: 3px;
+
+        div:first-child {
+            font-size: 14px;
+            font-weight: 600;
+            color: #bbc0cc;
+
+            span:last-child {
+                margin-left: 20px;
+                color: #5e6984;
+
+                i {
+                    color: #bbc0cc;
+                }
+            }
+        }
+
+        i {
+            margin-right: 5px;
+            font-size: 16px;
+        }
+
+        div:last-child {
+            font-size: 20px;
+            font-weight: 700;
+            color: #5e6984;
+
+            span {
+                font-weight: 400;
+                color: #bbc0cc;
+            }
+        }
+    }
+
+    .go-history-coins {
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    .go-ambassador-history-rows {
+        max-height: 200px;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #eaeaea;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #a68cc5;
+            border-radius: 2px;
+        }
+    }
+
+    .go-ambassador-history-amount {
+        position: relative;
+
+        div {
+            min-width: 150px;
+            display: inline-block;
+            text-align: right;
+        }
+    }
+
+    .go-ambassador-content {
+        position: relative;
+        z-index: 5;
+        p:nth-child(3) {
+            @include media-breakpoint-up(lg) {
+                width: 50%;
+                height: 100px;
+            }
+        }
+    }
+
+    .go-ambassador-animation {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 200px;
+        border-bottom: 2px solid #5e6984;
+        overflow: hidden;
+    }
+
+    .go-ambassador-animation-coins-2 {
+        position: absolute;
+        bottom: 0;
+        left: 50px;
+        width: 44px;
+    }
+
+    .go-ambassador-animation-coins-1 {
+        position: absolute;
+        bottom: 0;
+        right: 50px;
+        width: 30px;
+    }
+
+    .go-ambassador-animation-xcm {
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        width: 84px;
+    }
+
+    .go-ambassador-animation-build {
+        position: absolute;
+        bottom: 0;
+        right: 400px;
+        z-index: 2;
+        width: 182px;
+    }
+
+    .go-ambassador-animation-dashboard-container {
+        position: absolute;
+        bottom: 0;
+        right: 50px;
+        z-index: 1;
+        width: 380px;
+    }
+
+    .go-ambassador-ambassador-dashboard {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 380px;
+    }
+
+    .go-ambassador-animation-buildings {
+        position: absolute;
+        bottom: 2px;
+        right: 120px;
+        width: 292px;
+    }
+
+    .go-ambassador-animation-shape {
+        position: absolute;
+        bottom: 120px;
+        right: -100px;
+        z-index: 0;
+        width: 650px;
+    }
+
+    .go-ambassador-animation .go-animation-train-mask {
+        z-index: 1;
+    }
+
+    .go-ambassador-animation-cloud-1 {
+        position: absolute;
+        right: 450px;
+        bottom: 250px;
+        z-index: 3;
+        width: 30px;
+    }
+
+    .go-ambassador-animation-cloud-2 {
+        position: absolute;
+        right: 50px;
+        bottom: 250px;
+        z-index: 3;
+        width: 56px;
+    }
+
+    .go-ambassador-animation-bird-1 {
+        width: 15px;
+        position: absolute;
+        bottom: 180px;
+        right: 450px;
+    }
+
+    .go-ambassador-animation-bird-2 {
+        width: 15px;
+        position: absolute;
+        bottom: 200px;
+        right: 480px;
+    }
+
+    .go-animation-windmill {
+        position: absolute;
+        bottom: 0;
+        right: 410px;
+        z-index: 2;
+        width: 100px;
+        height: 200px;
+        -webkit-transform: scale(.8);
+        -ms-transform: scale(.8);
+        transform: scale(.8);
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+    }
+
+    .go-animation-windmill-base {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        width: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .go-animation-windmill-blade {
+        position: absolute;
+        left: 0;
+        bottom: 115px;
+        z-index: 2;
+        width: 100px;
+        -webkit-transform-origin: 50% 50% 0;
+        -ms-transform-origin: 50% 50% 0;
+        transform-origin: 50% 50% 0;
+    }
+
+    .spin {
+        -webkit-animation: spin infinite 3s linear;
+        -moz-animation: spin infinite 3s linear;
+        animation: spin infinite 3s linear;
+        animation-fill-mode: forwards;
+    }
+
+    .cloudmove {
+        -webkit-animation: cloudmove infinite ease-in-out;
+        -moz-animation: cloudmove infinite ease-in-out;
+        animation: cloudmove infinite ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    .floater {
+        -webkit-animation: floater infinite ease-in-out;
+        -moz-animation: floater infinite ease-in-out;
+        animation: floater infinite ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    .anim-dur3 {
+        animation-duration: 3s;
+    }
+
+    .anim-dur3-5 {
+        animation-duration: 3.5s;
+    }
+
+    @-webkit-keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @-webkit-keyframes cloudmove {
+        0% {
+            transform: translate3d(-15px, 0, 0);
+        }
+        50% {
+            transform: translate3d(0px, 0, 0);
+        }
+        100% {
+            transform: translate3d(-15px, 0, 0);
+        }
+    }
+
+    @keyframes cloudmove {
+        0% {
+            transform: translate3d(-15px, 0, 0);
+        }
+        50% {
+            transform: translate3d(0px, 0, 0);
+        }
+        100% {
+            transform: translate3d(-15px, 0, 0);
+        }
+    }
+
+    @-webkit-keyframes floater {
+        0% {
+            transform: translate3d(0px, -15px, 0);
+        }
+        50% {
+            transform: translate3d(0px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0px, -15px, 0);
+        }
+    }
+
+    @keyframes floater {
+        0% {
+            transform: translate3d(0px, -15px, 0);
+        }
+        50% {
+            transform: translate3d(0px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0px, -15px, 0);
+        }
+    }
+
+    @media screen and (max-width: 1800px) {
+        .go-ambassador-animation-xcm {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 1600px) {
+        .go-ambassador-content {
+            width: 100%;
+        }
+
+        .go-ambassador-container {
+            padding-bottom: 200px;
+        }
+
+        .go-ambassador-animation-dashboard-container {
+            right: -50px;
+            transform-origin: left bottom;
+            transform: scale(0.8);
+        }
+    }
+
+    @media screen and (max-width: 1300px) {
+        .go-ambassador-container {
+            padding-bottom: 250px;
+        }
+    }
+
+    @media screen and (max-height: 900px) {
+        .go-ambassador-history {
+            margin: 10px 0;
+        }
+    }
+
+    @media screen and (max-height: 800px) {
+        .go-ambassador-history-row div:last-child {
+            font-size: 16px;
+        }
+
+        .go-ambassador-button,
+        .go-ambassador-button:link {
+            font-size: 12px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .go-ambassador-container {
+            padding: 20px 20px 250px;
+        }
+
+        .go-ambassador {
+            padding: 0;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .go-ambassador-container {
+            h2 {
+                font-size: 16px !important;
+            }
+
+            p {
+                font-size: 10px;
+            }
+        }
+
+        .go-ambassador-history {
+            div:first-child,
+            div:last-child {
+                font-size: 9px;
+            }
+        }
+
+        .go-ambassador-history-amount div {
+            min-width: 100px;
+        }
+
+        .go-history-coins {
+            display: none;
+        }
+
+        .go-ambassador-history-row div:first-child {
+            font-size: 10px;
+
+            span {
+                display: block;
+
+                &:last-child {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .go-ambassador-animation-dashboard-container {
+            transform: scale(0.7);
+        }
+
+        .go-ambassador-button,
+        .go-ambassador-button:link {
+            font-size: 9px;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .go-ambassador-animation-dashboard-container {
+            transform: scale(0.7);
+            right: -100px;
+        }
+    }
+
+    @media screen and (max-width: 370px) {
+        .go-ambassador-animation-dashboard-container {
+            transform: scale(0.7);
+            right: -120px;
+        }
+    }
+}

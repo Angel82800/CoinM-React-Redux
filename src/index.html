@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CoinMetro GO! Platform</title>
+
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico"/>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"/>
+    <link rel="manifest" href="/favicon/manifest.json"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png"/>
+    <meta name="theme-color" content="#ffffff"/>
+
+    <!-- Google Tag Manager -->
+    <script data-cfasync="false">(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PJK7TXT');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- google fonts -->
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: { families: ['Montserrat', 'Roboto'] }
+        };
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = 'https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="vendors/material-design-icons/iconfont/material-icons.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="vendors/fontawesome/css/fontawesome-all.min.css">
+
+    <!-- Bootstrap + jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Select2 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+    <!-- Flipclock -->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css">-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js"></script>-->
+
+    <!-- TweenMax -->
+    <!--<script src="vendors/tweenmax/TweenMax.min.js"></script>-->
+
+    <!-- jQuery Popup Overlay -->
+    <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+
+    <!-- ChartiQ -->
+    <link rel="stylesheet" type="text/css" href="https://coinmetro.com/ChartIQ/css/stx-chart.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="https://coinmetro.com/ChartIQ/css/chartiq.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="https://coinmetro.com/ChartIQ/css/normalize.css" media="screen"/>
+
+    <!--<script src="https://coinmetro.com/ChartIQ/example-data/STX_SAMPLE_DAILY.js"></script>-->
+    <script src="https://coinmetro.com/ChartIQ/js/chartiq.js"></script>
+
+    <!-- D3 -->
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js?ver=3.5.17'></script>
+    <script src="assets/js/donut-pie-chart.min.js"></script>
+
+    <!-- Exchange UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Babel Polyfill -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+
+    <!-- INTERCOM -->
+    <script>//Set your APP_ID
+    var APP_ID = "wrka7ryo";
+    (function () {
+        var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', intercomSettings); } else {
+            var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Intercom = i; function l() {
+                var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true;
+                s.src = 'https://widget.intercom.io/widget/' + APP_ID;
+                var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+            } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); }
+        }
+    })()
+    </script>
+</head>
+
+<body id="body">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJK7TXT" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <section id="app-container">
+        <div id="loader-container"></div>
+    </section>
+
+    <div id="fomo_feed"></div>
+
+    <script type="text/javascript" src="https://www.usefomo.com/api/v1/Lcm_DVu_89Xgbzq6Z9VA4w/load.js" async></script>
+
+    <script>__REACT_DEVTOOLS_GLOBAL_HOOK__ = parent.__REACT_DEVTOOLS_GLOBAL_HOOK__</script>
+    <script type="text/javascript" src="/assets/app.js?v=1.7.8"></script>
+</body>
+</html>

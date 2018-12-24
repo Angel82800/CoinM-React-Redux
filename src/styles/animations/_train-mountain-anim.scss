@@ -1,0 +1,152 @@
+$tra_train_move_time: 15s;
+$tra_train_start_position: -100%;
+$tra_train_end_position: 100vw;
+
+.ga-train-mountain-anim {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+
+    * {
+        position: absolute;
+    }
+
+    .ga-shape {
+        bottom: 0;
+        opacity: 0.1;
+        left: 300px;
+    }
+
+    .ga-shape-2 {
+        display: none;
+        bottom: 0;
+        left: 300px;
+    }
+
+    .ga-cloud-1,
+    .ga-cloud-2,
+    .ga-cloud-3 {
+        height: 19px;
+        z-index: 2;
+    }
+
+    .ga-bird-1,
+    .ga-bird-2 {
+        height: 10px;
+        z-index: 2;
+    }
+
+    .ga-bird-1 {
+        bottom: 50px;
+        left: 650px;
+        -webkit-animation: floater infinite 4s ease-in-out;
+        -moz-animation: floater infinite 4s ease-in-out;
+        animation: floater infinite 4s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    .ga-bird-2 {
+        bottom: 80px;
+        left: 600px;
+        -webkit-animation: floater infinite 4.8s ease-in-out;
+        -moz-animation: floater infinite 4.8s ease-in-out;
+        animation: floater infinite 4.8s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    .ga-cloud-1 {
+        bottom: 50px;
+        left: 500px;
+        -webkit-animation: cloudmove infinite 4.8s ease-in-out;
+        -moz-animation: cloudmove infinite 4.8s ease-in-out;
+        animation: cloudmove infinite 4.8s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    .ga-cloud-2 {
+        bottom: 65px;
+        left: 200px;
+        -webkit-animation: cloudmove infinite 4s ease-in-out;
+        -moz-animation: cloudmove infinite 4s ease-in-out;
+        animation: cloudmove infinite 4s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    .ga-cloud-3 {
+        bottom: 40px;
+        right: 240px;
+        z-index: 0;
+        -webkit-animation: cloudmove infinite 5.2s ease-in-out;
+        -moz-animation: cloudmove infinite 5.2s ease-in-out;
+        animation: cloudmove infinite 5.2s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    .ga-road {
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        z-index: 2;
+        background-color: #5c6783;
+    }
+
+    .ga-two-roks {
+        height: 92px;
+        right: 114px;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .ga-train-mask {
+        width: 100%;
+        bottom: 0;
+        right: 168px;
+        height: 24px;
+        overflow: hidden;
+
+        .ga-train {
+            height: 24px;
+            transform: translateX($tra_train_start_position);
+            bottom: 0;
+            z-index: 1;
+            -webkit-animation: train-mountain-move infinite $tra_train_move_time linear;
+            -moz-animation: train-mountain-move infinite $tra_train_move_time linear;
+            animation: train-mountain-move infinite $tra_train_move_time linear;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+
+            @keyframes train-mountain-move {
+                0% {
+                    transform: translateX($tra_train_start_position);
+                }
+                100% {
+                    transform: translateX($tra_train_end_position);
+                }
+            }
+
+            @-webkit-keyframes train-mountain-move {
+                0% {
+                    transform: translateX($tra_train_start_position);
+                }
+                100% {
+                    transform: translateX($tra_train_end_position);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .ga-train-mountain-anim {
+        .ga-two-roks {
+            right: 20px;
+        }
+
+        .ga-train-mask {
+            right: 74px;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+#seed-csp4-content {max-width:100%;}
+#seed-csp4-page { padding: 0 0 0;min-height: 100%;}
+#seed-csp4-content img {max-width: none;height: auto;}
+* {
+	outline:none !important;
+	-moz-outline: none !important;
+}
+
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #69d5e1;
+	font-family: arial, sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	color: #fff;
+}
+
+.maintance-container {
+  padding-top: 10%;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.maintance-container h1 {font-size: 40px;font-weight: bold;overflow: hidden;}
+
+.maintance-container .road {
+position: absolute;
+width: 100%;
+height: 75px;
+bottom: 0;
+background-color: #9f89c8;
+border-top: 2px solid #5c6783;
+z-index: 2;
+}
+.bg-1 {
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  opacity: 0.3;
+  z-index: 0;
+}
+.bg-2 {
+  position: absolute;
+  left: 100px;
+  bottom: 50px;
+  opacity: 0.3;
+  z-index: 0;
+}
+.maintance-illustration {
+  position: absolute;
+  left: 0;
+  bottom: 65px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1400px){
+  .maintance-container {padding-top: 5%;}
+}
+
+@media screen and (max-width: 767px){
+  .maintance-container {padding-top: 15px !important;}
+  .maintance-illustration {height: 400px !important;}
+
+}

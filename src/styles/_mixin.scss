@@ -1,0 +1,128 @@
+// =============================================================================
+// String Replace
+// =============================================================================
+
+@function str-replace($string, $search, $replace: "") {
+    $index: str-index($string, $search);
+
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+
+    @return $string;
+}
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+    $src: null;
+
+    $extmods: (
+        eot: "?",
+        svg: "#" + str-replace($name, " ", "_")
+    );
+
+    $formats: (
+        otf: "opentype",
+        ttf: "truetype"
+    );
+
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+    }
+}
+
+@mixin backgroundGradient($gradient) {
+    background: -webkit-linear-gradient($gradient);
+    background: -moz-linear-gradient($gradient);
+    background: -ms-linear-gradient($gradient);
+    background: -o-linear-gradient($gradient);
+}
+
+@mixin filter($startColorStr, $endColorStr, $gradientType) {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$startColorStr, endColorstr=$endColorStr, GradientType=$gradientType);
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius !important;
+    -moz-border-radius: $radius !important;
+    border-radius: $radius !important;
+}
+
+@mixin boxShadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin animation($method, $time, $type) {
+    -webkit-animation: $method $time infinite $type;
+    -o-animation: $method $time infinite $type;
+    animation: $method $time infinite $type;
+}
+
+@mixin linear-animation($method, $time) {
+    @include animation($method, $time, linear);
+}
+
+@mixin ease-animation($method, $time) {
+    @include animation($method, $time, ease-in-out);
+}
+
+@mixin r-transform($angle) {
+    -webkit-transform: rotate($angle);
+    -moz-transform: rotate($angle);
+    -ms-transform: rotate($angle);
+    -o-transform: rotate($angle);
+    transform: rotate($angle);
+}
+
+@mixin translateX($distance) {
+    -webkit-transform: translateX($distance);
+    -moz-transform: translateX($distance);
+    -ms-transform: translateX($distance);
+    -o-transform: translateX($distance);
+    transform: translateX($distance);
+}
+
+@mixin translateY($distance) {
+    -webkit-transform: translateY($distance);
+    -moz-transform: translateY($distance);
+    -ms-transform: translateY($distance);
+    -o-transform: translateY($distance);
+    transform: translateY($distance);
+}
+
+@mixin transition($method, $time, $type) {
+    -webkit-transition: $method $time $type;
+    -moz-transition: $method $time $type;
+    -o-transition: $method $time $type;
+    transition: $method $time $type;
+}
+
+@mixin scale3D($scaleX, $scaleY, $scaleZ) {
+    -webkit-transform: scale3d($scaleX, $scaleY, $scaleZ);
+    -moz-transform: scale3d($scaleX, $scaleY, $scaleZ);
+    -ms-transform: scale3d($scaleX, $scaleY, $scaleZ);
+    -o-transform: scale3d($scaleX, $scaleY, $scaleZ);
+    transform: scale3d($scaleX, $scaleY, $scaleZ);
+}
+
+@mixin translate3D($translateX, $translateY, $translateZ) {
+    -webkit-transform: translate3d($translateX, $translateY, $translateZ);
+    -moz-transform: translate3d($translateX, $translateY, $translateZ);
+    -ms-transform: translate3d($translateX, $translateY, $translateZ);
+    -o-transform: translate3d($translateX, $translateY, $translateZ);
+    transform: translate3d($translateX, $translateY, $translateZ);
+}

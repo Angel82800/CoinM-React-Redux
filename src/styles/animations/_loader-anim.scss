@@ -1,0 +1,77 @@
+.ga-loading-animation {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    border-radius: 3px;
+
+    * {
+        position: absolute;
+    }
+
+    .ga-loader {
+        display: block;
+        left: 0;
+        right: 0;
+        top: -30px;
+        bottom: 0;
+        margin: auto;
+        -webkit-animation: loader infinite 3s linear;
+        -moz-animation: loader infinite 3s linear;
+        animation: loader infinite 3s linear;
+        animation-fill-mode: forwards;
+        transform-origin: center center;
+    }
+
+    span {
+        vertical-align: top;
+        height: 20px;
+        display: block;
+        left: 0;
+        right: 0;
+        top: 60px;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+.ga-loader-blue {
+    background-color: #3fc6d6;
+}
+
+.ga-loader-gray {
+    background-color: #f9f9f9;
+
+    span {
+        color: #5c6783;
+    }
+}
+
+.ga-loader-white {
+    background-color: #fff;
+
+    span {
+        color: #5c6783;
+    }
+}
+
+@-webkit-keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

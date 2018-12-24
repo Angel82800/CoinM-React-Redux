@@ -1,0 +1,115 @@
+.text-small {
+    font-size: 12px;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 10px;
+    }
+}
+
+.bold {
+    font-weight: $headings-font-weight;
+}
+
+.color-primary,
+a.color-primary {
+    color: $brand-primary;
+    &:hover {
+        color: $brand-primary;
+    }
+}
+
+.color-success,
+a.color-success {
+    color: $brand-success;
+    &:hover {
+        color: $brand-success;
+    }
+}
+
+.color-info,
+a.color-info {
+    color: $brand-info;
+    &:hover {
+        color: $brand-info;
+    }
+}
+
+.color-info-alt,
+a.color-info-alt {
+    color: $brand-info-alt;
+    &:hover {
+        color: $brand-info-alt;
+    }
+}
+
+.color-warning,
+a.color-warning {
+    color: $brand-warning;
+    &:hover {
+        color: $brand-warning;
+    }
+}
+
+.color-danger,
+a.color-danger {
+    color: $brand-danger;
+    &:hover {
+        color: $brand-danger;
+    }
+}
+
+.color-dark,
+a.color-dark {
+    color: $dark;
+    &:hover {
+        color: $dark;
+    }
+}
+
+.color-white,
+a.color-white {
+    color: $white;
+    &:hover {
+        color: $white;
+    }
+}
+
+.color-gray-darker,
+a.color-gray-darker {
+    color: $gray-darker;
+    &:hover {
+        color: $gray-darker;
+    }
+}
+
+.color-gray-dark,
+a.color-gray-dark {
+    color: $gray-dark;
+    &:hover {
+        color: $gray-dark;
+    }
+}
+
+.color-gray,
+a.color-gray {
+    color: $gray;
+    &:hover {
+        color: $gray;
+    }
+}
+
+.color-gray-light,
+a.color-gray-light {
+    color: $gray-light;
+    &:hover {
+        color: $gray-light;
+    }
+}
+
+.color-gray-lighter,
+a.color-gray-lighter {
+    color: $gray-lighter;
+    &:hover {
+        color: $gray-lighter;
+    }
+}

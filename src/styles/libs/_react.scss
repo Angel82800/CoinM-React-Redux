@@ -1,0 +1,83 @@
+
+// Layout fix
+#app-container,
+#app-inner,
+.main-app-container {
+    height: 100%;
+    min-height: 100%;
+}
+
+
+// animations
+.fade-enter {
+    opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity .25s ease-in;
+}
+
+.fade-leave {
+    opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+    opacity: 0.01;
+    transition: opacity .1s ease-in;
+}
+
+// React logo, #67DAF9
+.logo-react {
+    .react-dot,
+    .react-curve {
+        opacity: .9;
+    }
+    .react-dot {
+        fill: #fff;
+    }
+    .react-curve {
+        stroke: #fff;
+    }
+}
+.bg-color-warning,
+.bg-color-light {
+    > .logo-react {
+        .react-dot {
+            fill: $body-color;
+        }
+        .react-curve {
+            stroke: $body-color;
+        }
+    }
+}
+.theme-gray,
+.theme-dark {
+    .bg-color-warning,
+    .bg-color-light {
+        > .logo-react {
+            .react-dot,
+            .react-curve {
+                opacity: .7;
+            }
+            .react-dot {
+                fill: #fff;
+            }
+            .react-curve {
+                stroke: #fff;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $l_screen_md_min) {
+    .nav-collapsed .app-sidebar{
+        .sidebar-header {
+            .logo-react {
+                margin-bottom: -5px;
+            }
+        }
+    }
+}
+
+

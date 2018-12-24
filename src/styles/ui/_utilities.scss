@@ -1,0 +1,43 @@
+@mixin divider() {
+    display: block;
+    border: 0;
+    border-top: 1px solid transparent;
+
+    &.divider-solid {
+        border-style: solid;
+        border-color: $state-default-border;
+    }
+
+    &.divider-dashed {
+        border-style: dashed;
+        border-color: $state-default-border;
+    }
+
+    &.divider-dotted {
+        border-style: dotted;
+        border-color: $state-default-border;
+    }
+}
+
+.divider {
+    @include divider();
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.space {
+    display: inline;
+    padding: 6px;
+}
+
+span.block {
+    display: block;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-border {
+    border: 0 !important;
+}

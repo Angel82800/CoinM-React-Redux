@@ -1,0 +1,88 @@
+.services-tam {
+    position: relative;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #9f8bc9;
+    color: #d6cde8;
+    background-image: url("../assets/img/shape.png");
+    background-position: left -650px top 25px;
+    background-repeat: no-repeat;
+
+    h1 {
+        font-weight: 700;
+        color: #fff;
+    }
+
+    ul {
+        list-style: none;
+        font-size: 16px;
+        margin-top: 40px;
+
+        li {
+            position: relative;
+            margin-bottom: 40px;
+            line-height: 1.8rem;
+
+            &::after {
+                position: absolute;
+                top: 10px;
+                left: -30px;
+                content: '';
+                background-image: url("../assets/img/done.png");
+                background-repeat: no-repeat;
+                width: 15px;
+                height: 11px;
+            }
+        }
+    }
+}
+
+.services-tam-add {
+    line-height: 1.6rem;
+    position: relative;
+    padding-top: 140px;
+    padding-right: 20px;
+    margin-top: -17px;
+    background-image: url("../assets/img/boat.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    .tractor {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 130px;
+        border-bottom: 2px solid #ae9bd1;
+        background-image: url("../assets/img/tractor.png");
+        background-repeat: no-repeat;
+        background-position: left 20px top 70px;
+    }
+
+    .tap {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 130px;
+        border-bottom: 2px solid #ae9bd1;
+        background-image: url("../assets/img/tap.png");
+        background-repeat: no-repeat;
+        background-position: left 20px top 70px;
+    }
+
+    .sheme {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 130px;
+        border-bottom: 2px solid #ae9bd1;
+        background-image: url("../assets/img/sheme.png");
+        background-repeat: no-repeat;
+        background-position: left 30px top 80px;
+    }
+
+    .set {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 130px;
+        background-image: url("../assets/img/set.png");
+        background-repeat: no-repeat;
+        background-position: left 30px top 80px;
+    }
+}

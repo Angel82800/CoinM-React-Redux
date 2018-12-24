@@ -1,0 +1,111 @@
+// mixin
+@mixin button-icon-variant($size) {
+    height: $size;
+    width: $size;
+    line-height: $size;
+
+    i {
+        line-height: $size;
+    }
+}
+
+@mixin social-button-variant($background, $border) {
+    color: $white;
+    background-color: $background;
+    border-color: $border;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $white;
+        text-decoration: none;
+        background-color: darken($background, 8%);
+        border-color: darken($border, 12%)
+    }
+}
+
+// make sure it overrides material2 styles
+a,
+button {
+    &.btn-round {
+        border-radius: 2em;
+    }
+}
+
+// social buttons
+.btn-twitter {
+    @include social-button-variant(#00c7f7, #00c7f7);
+}
+
+.btn-facebook {
+    @include social-button-variant(#335397, #335397);
+}
+
+.btn-gplus,
+.btn-google-plus {
+    @include social-button-variant(#dd4a38, #dd4a38);
+}
+
+.btn-instagram {
+    @include social-button-variant(#82685A, #82685A);
+}
+
+.btn-vimeo {
+    @include social-button-variant(#63879C, #63879C);
+}
+
+.btn-flickr {
+    @include social-button-variant(#0061DB, #0061DB);
+}
+
+.btn-github {
+    @include social-button-variant(#3B3B3B, #3B3B3B);
+}
+
+.btn-pinterest {
+    @include social-button-variant(#D73532, #D73532);
+}
+
+.btn-tumblr {
+    @include social-button-variant(#586980, #586980);
+}
+
+.btn-linkedin {
+    @include social-button-variant(#018FAF, #018FAF);
+}
+
+.btn-dribbble {
+    @include social-button-variant(#EA73A0, #EA73A0);
+}
+
+.btn-stumbleupon {
+    @include social-button-variant(#EA4B24, #EA4B24);
+}
+
+.btn-lastfm {
+    @include social-button-variant(#B80638, #B80638);
+}
+
+.btn-evernote {
+    @include social-button-variant(#3BAB27, #3BAB27);
+}
+
+.btn-skype {
+    @include social-button-variant(#00B0F6, #00B0F6);
+}
+
+.btn-soundcloud {
+    @include social-button-variant(#0066FF, #0066FF);
+}
+
+.btn-behance {
+    @include social-button-variant(#B80638, #B80638);
+}
+
+.btn-rss {
+    @include social-button-variant(#F79638, #F79638);
+}
+
+.btn-youtube {
+    @include social-button-variant(#CC181E, #CC181E);
+}

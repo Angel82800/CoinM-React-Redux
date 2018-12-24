@@ -1,0 +1,318 @@
+.academy-app-container {
+    //padding-bottom: 120px;
+    padding: 16px;
+}
+
+.go-lessons-slider {
+    width: 100%;
+}
+
+.go-lesson-item {
+    width: 500px;
+}
+
+.go-lesson-icon {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        height: 100px;
+    }
+}
+
+.go-lesson-title {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #47bed0;
+}
+
+.go-lesson-subtitle {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.go-lesson-subtitle-2 {
+    line-height: 1.5;
+}
+
+.go-button-description-container {
+    position: absolute;
+    bottom: -15px;
+    right: 20px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.go-button-description {
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #e1e4ec;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 11px;
+    color: #47bed0 !important;
+    transition: all 300ms;
+
+    &:hover {
+        background-color: #47bed0;
+        border-color: #47bed0;
+        color: #fff !important;
+    }
+}
+
+.blue .go-lesson-icon {
+    background-color: #47bed0;
+}
+
+.yellow .go-lesson-icon {
+    background-color: #fcdb19;
+}
+
+.violet .go-lesson-icon {
+    background-color: #9e8bc1;
+}
+
+.go-lesson-description {
+    position: relative;
+    min-height: 200px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e1e4ec;
+}
+
+.go-lesson-list {
+    padding-left: 20px;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: #bbc0cc;
+
+    li {
+        margin: 10px 0;
+        line-height: 1.5;
+    }
+}
+
+.go-button-gray {
+    position: relative;
+    width: 210px;
+    min-width: 210px;
+    padding: 15px 20px;
+    background-color: #fff;
+    border: 1px solid #e1e4ec;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    cursor: pointer;
+    color: #7a849b;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+
+    i {
+        font-size: 10px;
+        line-height: 20px;
+        margin-right: 10px;
+    }
+
+    &:hover {
+        border-color: #3bc7d7;
+        color: #3bc7d7;
+
+        .ga-coming-but {
+            background-color: #3bc7d7;
+        }
+    }
+}
+
+.ga-coming-but {
+    position: absolute;
+    left: 52px;
+    top: -10px;
+    overflow: hidden;
+    padding: 0 10px;
+    background-color: #bbc0cc;
+    border-radius: 20px;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #fff;
+    transition: all 300ms;
+}
+
+.go-coming-soon-title {
+    position: relative;
+    line-height: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.go-coming-reflect {
+    position: absolute;
+    right: 20px;
+    z-index: 0;
+    width: 40px;
+    opacity: 1;
+}
+
+.go-lesson-buttons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    z-index: 11;
+
+    .go-button-circle {
+        margin-left: 10px;
+    }
+}
+
+.go-button-circle {
+    width: 52px;
+    height: 52px;
+    border: 1px solid #e1e4ec;
+    border-radius: 50%;
+    color: #3bc7d7;
+    text-align: center;
+    line-height: 52px;
+    transition: all 300ms;
+
+    i {
+        color: #3bc7d7;
+        font-size: 20px;
+        transform: scaleX(-1) translateY(1px);
+
+    }
+
+    &:hover {
+        background-color: #3bc7d7;
+        border-color: #3bc7d7;
+        color: #fff;
+
+        i {
+            color: #fff;
+        }
+    }
+}
+
+.go-lessons-slider-container {
+    position: relative;
+}
+
+.go-lesson-prev,
+.go-lesson-next {
+    position: absolute;
+    top: 80px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #9f89c8;
+    color: #fff;
+    font-size: 12px;
+    line-height: 23px;
+    text-align: center;
+    border: 8px solid #fff;
+    cursor: pointer;
+    transition: all 300ms;
+
+    &:hover {
+        background-color: #47bed0;
+    }
+}
+
+.go-lesson-prev {
+    left: -20px;
+    padding-right: 1.5px;
+    z-index: 11;
+}
+
+.go-lesson-next {
+    right: -20px;
+    padding-left: 1.5px;
+    z-index: 11;
+}
+
+.go-lesson-content {
+    min-height: 250px;
+}
+
+.go-lesson-play {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(94, 105, 132, 0.7);
+    color: #fff;
+    font-size: 14px;
+    transition: all 300ms;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+
+    i {
+        color: #fff;
+        transform: translateX(2px) translateY(1px);
+    }
+
+    &:hover {
+        background-color: rgba(94, 105, 132, 1);
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .go-lesson-item {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .go-lesson-item {
+        width: 350px;
+    }
+
+    .go-lesson-content {
+        min-height: 300px;
+    }
+
+    .go-lesson-description {
+        min-height: 250px;
+    }
+
+    .go-lesson-icon img {
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .go-lesson-item {
+        width: 300px;
+    }
+
+    .go-lesson-description {
+        min-height: 280px;
+    }
+
+    .go-lesson-icon img {
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .go-lesson-item {
+        width: 240px;
+    }
+}

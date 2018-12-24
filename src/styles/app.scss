@@ -1,0 +1,23 @@
+@import "variables";
+@import "mixin";
+
+@import "libs/react";
+
+// Pages
+@import "pages/auth";
+@import "pages/error";
+@import "pages/dashboard";
+@import "pages/ambassador";
+@import "pages/trade";
+@import "pages/exchange";
+@import "pages/etcf";
+@import "pages/tam";
+@import "pages/academy";
+@import "pages/kyc";
+@import "pages/settings";
+
+// Animations
+@import "animations/_train-mountain-anim.scss";
+@import "animations/_inspector-anim.scss";
+@import "animations/_loader-anim.scss";
+@import "animations/_for-items-anim.scss";

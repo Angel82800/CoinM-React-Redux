@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 179.6 93.9" style="enable-background:new 0 0 179.6 93.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#87DEE8;stroke:#5C6783;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:#A08AC9;}
+	.st2{fill:none;stroke:#5C6783;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st3{fill:#FFFFFF;stroke:#5C6783;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st4{fill:#FFFFFF;stroke:#5C6783;stroke-width:2;}
+	.st5{fill:none;stroke:#5C6783;stroke-width:2;stroke-linecap:round;}
+</style>
+<g id="building_4_" transform="translate(58.000000, 209.000000)">
+	<polyline id="Path-3_1_" class="st0" points="-23.6,-191.4 -23.6,-208 17.3,-208 17.3,-116.1 -10.7,-116.1 	"/>
+	<polygon id="Path-3_2_" class="st1" points="0.2,-208 17.3,-208 17.3,-116.1 0.2,-116.1 0.2,-200.5 	"/>
+	<polyline id="Path-3_3_" class="st2" points="-23.6,-191.4 -23.6,-208 17.3,-208 17.3,-116.1 -10.7,-116.1 	"/>
+	<path id="Line-8_10_" class="st2" d="M-14.1-141.3h30.6"/>
+	<path id="Line-8_11_" class="st2" d="M-14.1-129.7h17"/>
+	<path id="Line-8_12_" class="st2" d="M-14.1-152.8h17"/>
+	<path id="Line-8_13_" class="st2" d="M-14.1-163.7h30"/>
+	<path id="Line-8_14_" class="st2" d="M-14.1-185.5h30.6"/>
+	<path id="Line-8_15_" class="st2" d="M-14.1-173.9h17"/>
+	<path id="Line-8_16_" class="st2" d="M-14.1-197.1h17"/>
+	
+		<g id="Group-4_1_" transform="translate(34.000000, 75.000000) scale(-1, 1) translate(-34.000000, -75.000000) translate(0.000000, 15.000000)">
+		<polygon id="Path-2_7_" class="st3" points="103.2,-212.1 78.7,-212.1 78.7,-131.1 125,-131.1 125,-185.5 		"/>
+		<path id="Line-8_17_" class="st2" d="M94.4-156.9H125"/>
+		<path id="Line-8_18_" class="st2" d="M94.4-145.4H125"/>
+		<path id="Line-8_19_" class="st2" d="M94.4-168.5H125"/>
+		<path id="Line-8_20_" class="st2" d="M94.4-179.4h30"/>
+		<path id="Line-8_21_" class="st2" d="M94.4-190.3h26.6"/>
+		<path id="Line-8_22_" class="st2" d="M94.4-201.2h17"/>
+	</g>
+</g>
+<g id="tree_6_" transform="translate(379.000000, 240.000000)">
+	<path id="Triangle_6_" class="st4" d="M-205.7-175.8l5.1,14.7l0,0c0.8,2.3-0.4,4.8-2.7,5.5c-0.5,0.2-0.9,0.2-1.4,0.2h-10.1l0,0
+		c-2.4,0-4.4-2-4.4-4.4c0-0.5,0.1-1,0.2-1.4l5.1-14.7l0,0c0.8-2.3,3.3-3.5,5.5-2.7C-207.2-178.1-206.2-177.1-205.7-175.8z"/>
+	<path id="Line-5_6_" class="st5" d="M-210.1-168.4v21.4"/>
+</g>
+</svg>

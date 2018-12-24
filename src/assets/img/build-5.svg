@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 168 113" style="enable-background:new 0 0 168 113;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#5C6783;stroke-width:3;}
+	.st2{fill:#87DEE8;}
+	.st3{fill:#A08AC9;}
+	.st4{fill:#D7F4F7;}
+</style>
+<g>
+	<g id="building" transform="translate(210.000000, 173.000000)">
+		<g id="Rectangle-6">
+			<g>
+				<polygon id="path-1" class="st0" points="-210,-112 -42,-112 -42,-60 -210,-60 				"/>
+			</g>
+			<path class="st1" d="M-208.5-110.5v49h165v-49H-208.5z"/>
+		</g>
+		<g id="window" transform="translate(14.000000, 14.000000)">
+			<rect id="Rectangle-9" x="-210" y="-112" class="st2" width="65" height="38"/>
+			<polygon id="Rectangle-9_1_" class="st3" points="-210,-110 -145,-110 -145,-74 			"/>
+			<rect id="Rectangle-9_2_" x="-208.5" y="-99.5" class="st1" width="62" height="12"/>
+			<rect id="Rectangle-9_3_" x="-208.5" y="-87.5" class="st1" width="62" height="12"/>
+			<rect id="Rectangle-9_4_" x="-208.5" y="-110.5" class="st1" width="62" height="11"/>
+			<g id="Rectangle-9_5_">
+				<g>
+					<rect id="path-2" x="-135" y="-112" class="st4" width="15" height="25"/>
+				</g>
+				<rect x="-133.5" y="-110.5" class="st1" width="12" height="22"/>
+			</g>
+			<g id="Rectangle-9_6_">
+				<g>
+					<rect id="path-3" x="-110" y="-112" class="st4" width="15" height="25"/>
+				</g>
+				<rect x="-108.5" y="-110.5" class="st1" width="12" height="22"/>
+			</g>
+			<g id="Rectangle-9_7_">
+				<g>
+					<rect id="path-4" x="-85" y="-112" class="st4" width="15" height="25"/>
+				</g>
+				<rect x="-83.5" y="-110.5" class="st1" width="12" height="22"/>
+			</g>
+		</g>
+	</g>
+	<g id="generator" transform="translate(297.000000, 112.000000)">
+		<g id="Rectangle-7">
+			<g>
+				<path id="path-5" class="st4" d="M-187-112h25l0,0c8.8,0,16,7.2,16,16v48h-57v-48l0,0C-203-104.8-195.8-112-187-112z"/>
+			</g>
+			<path class="st1" d="M-201.5-49.5h54V-96c0-8-6.5-14.5-14.5-14.5h-25c-8,0-14.5,6.5-14.5,14.5V-49.5z"/>
+		</g>
+		<g id="Rectangle-8">
+			<g>
+				<path id="path-6" class="st0" d="M-205.2-98h61.4c2.7,0,4.8,2.1,4.8,4.8v2.4c0,2.7-2.1,4.8-4.8,4.8h-61.4
+					c-2.7,0-4.8-2.1-4.8-4.8v-2.4C-210-95.9-207.9-98-205.2-98z"/>
+			</g>
+			<path class="st1" d="M-204-96.5h59c2.5,0,4.5,2,4.5,4.5l0,0c0,2.5-2,4.5-4.5,4.5h-59c-2.5,0-4.5-2-4.5-4.5l0,0
+				C-208.5-94.5-206.5-96.5-204-96.5z"/>
+		</g>
+		<g id="Rectangle-8_1_">
+			<g>
+				<path id="path-7" class="st0" d="M-205.2-74h61.4c2.7,0,4.8,2.1,4.8,4.8v2.4c0,2.7-2.1,4.8-4.8,4.8h-61.4
+					c-2.7,0-4.8-2.1-4.8-4.8v-2.4C-210-71.9-207.9-74-205.2-74z"/>
+			</g>
+			<path class="st1" d="M-204-72.5h59c2.5,0,4.5,2,4.5,4.5l0,0c0,2.5-2,4.5-4.5,4.5h-59c-2.5,0-4.5-2-4.5-4.5l0,0
+				C-208.5-70.5-206.5-72.5-204-72.5z"/>
+		</g>
+	</g>
+	<g id="generator_1_" transform="translate(220.000000, 135.000000)">
+		<g id="Rectangle-7_1_">
+			<g>
+				<path id="path-8" class="st4" d="M-187-112h25l0,0c8.8,0,16,7.2,16,16v25h-57v-25l0,0C-203-104.8-195.8-112-187-112z"/>
+			</g>
+			<path class="st1" d="M-201.5-72.5h54V-96c0-8-6.5-14.5-14.5-14.5h-25c-8,0-14.5,6.5-14.5,14.5V-72.5z"/>
+		</g>
+		<g id="Rectangle-8_2_">
+			<g>
+				<path id="path-9" class="st0" d="M-205.2-97h61.4l0,0c2.7,0,4.8,2.1,4.8,4.8v2.4l0,0c0,2.7-2.1,4.8-4.8,4.8h-61.4l0,0
+					c-2.7,0-4.8-2.1-4.8-4.8v-2.4l0,0C-210-94.9-207.9-97-205.2-97z"/>
+			</g>
+			<path class="st1" d="M-205.2-95.5c-1.8,0-3.3,1.5-3.3,3.3v2.4c0,1.8,1.5,3.3,3.3,3.3h61.4c1.8,0,3.3-1.5,3.3-3.3v-2.4
+				c0-1.8-1.5-3.3-3.3-3.3H-205.2z"/>
+		</g>
+	</g>
+</g>
+</svg>

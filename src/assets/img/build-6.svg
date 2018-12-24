@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 325 113.3" style="enable-background:new 0 0 325 113.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#D7F4F7;stroke:#5C6783;stroke-width:2;stroke-linecap:square;}
+	.st1{fill:#FFFFFF;stroke:#5C6783;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:#A08AC9;stroke:#5C6783;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st3{fill:#D7F4F7;stroke:#5C6783;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st4{fill:#FFFFFF;}
+	.st5{fill:none;stroke:#5C6783;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st6{fill:#87DEE8;stroke:#5C6783;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st7{fill:#A08AC9;}
+	.st8{fill:#87DEE8;}
+	.st9{fill:none;stroke:#5C6783;stroke-width:2;}
+</style>
+<g>
+	<polygon id="Line-7_1_" class="st0" points="1,68.3 244,68.3 244,112.3 1,112.3 	"/>
+	<g id="arc_3_" transform="translate(201.000000, 302.000000)">
+		<path id="Oval_8_" class="st1" d="M-175-189.7c0-17,13.9-30.8,31.2-30.8s31.2,13.8,31.2,30.8H-175z"/>
+		<path id="Oval_7_" class="st2" d="M-138.3-219.8c-13.5,3.3-23.5,15.5-23.5,30.1H-175c0-17,13.9-30.8,31.2-30.8
+			C-142.4-220.5-140.5-220.3-138.3-219.8z"/>
+	</g>
+	<g id="arc_2_" transform="translate(450.000000, 302.000000)">
+		<path id="Oval_6_" class="st1" d="M-241.3-189.7c0-17,13.9-30.8,31.2-30.8s31.2,13.8,31.2,30.8H-241.3z"/>
+		<path id="Oval_5_" class="st2" d="M-204.6-219.8c-13.5,3.3-23.5,15.5-23.5,30.1h-13.2c0-17,13.9-30.8,31.2-30.8
+			C-208.6-220.5-206.8-220.3-204.6-219.8z"/>
+	</g>
+	<g id="building_8_" transform="translate(498.000000, 191.000000)">
+		<polyline id="Path-3_7_" class="st3" points="-218.1,-79.4 -218.1,-186.6 -174,-186.6 -174,-79.4 		"/>
+		<g id="Rectangle-10_1_">
+			<g>
+				<polygon id="path-17_1_" class="st4" points="-202.7,-78.7 -202.7,-191 -190.2,-191 -190.2,-78.7 				"/>
+			</g>
+			<path class="st5" d="M-204.1-78.7l0.4-111.2h14.7l-0.1,111.2H-204.1z"/>
+		</g>
+		
+			<g id="Group-4_3_" transform="translate(34.000000, 93.000000) scale(-1, 1) translate(-34.000000, -93.000000) translate(0.000000, 33.000000)">
+			<polygon id="Path-2_12_" class="st1" points="298.6,-199.8 272.1,-199.8 272.1,-111.7 322,-111.7 322,-170.4 			"/>
+			<polygon id="Path-2_11_" class="st6" points="292.5,-188 284.6,-188 284.6,-111.7 310.3,-111.7 310.3,-166.7 			"/>
+			<polygon id="Path-2_10_" class="st7" points="293.2,-188 284.6,-188 284.6,-111.7 293.2,-111.7 			"/>
+			<polygon id="Path-2_9_" class="st5" points="292.5,-188 284.6,-188 284.6,-111.7 310.3,-111.7 310.3,-166.7 			"/>
+			<path id="Line-8_40_" class="st5" d="M272.9-139.6h36"/>
+			<path id="Line-8_39_" class="st5" d="M272.9-127.1h36"/>
+			<path id="Line-8_38_" class="st5" d="M272.9-152.1h36"/>
+			<path id="Line-8_37_" class="st5" d="M272.9-163.8h36"/>
+			<path id="Line-8_36_" class="st5" d="M272.9-175.6h29.4"/>
+		</g>
+	</g>
+	<g id="building_6_" transform="translate(326.000000, 257.000000)">
+		<rect id="Rectangle-11_15_" x="-208.3" y="-208.6" class="st8" width="63.9" height="64.6"/>
+		<rect id="Rectangle-11_14_" x="-176" y="-208.6" class="st7" width="30.8" height="64.6"/>
+		<rect id="Rectangle-11_13_" x="-207.2" y="-207.5" class="st5" width="61.7" height="62.4"/>
+		<g id="Rectangle-11_12_">
+			<g>
+				<rect id="path-20_1_" x="-199.5" y="-182.1" class="st4" width="47" height="11.7"/>
+			</g>
+			<rect x="-198.4" y="-181" class="st9" width="44.8" height="9.5"/>
+		</g>
+		<g id="Rectangle-11_11_">
+			<g>
+				<rect id="path-21_1_" x="-199.5" y="-190.9" class="st4" width="47" height="11.7"/>
+			</g>
+			<rect x="-198.4" y="-189.8" class="st9" width="44.8" height="9.5"/>
+		</g>
+		<g id="Rectangle-11_10_">
+			<g>
+				<rect id="path-22_1_" x="-199.5" y="-199.7" class="st4" width="47" height="11.7"/>
+			</g>
+			<rect x="-198.4" y="-198.6" class="st9" width="44.8" height="9.5"/>
+		</g>
+		<g id="Rectangle-11_9_">
+			<g>
+				<rect id="path-23_1_" x="-199.5" y="-164.5" class="st4" width="47" height="11.7"/>
+			</g>
+			<rect x="-198.4" y="-163.4" class="st9" width="44.8" height="9.5"/>
+		</g>
+		<g id="Rectangle-11_8_">
+			<g>
+				<rect id="path-24_1_" x="-199.5" y="-173.3" class="st4" width="47" height="11.7"/>
+			</g>
+			<rect x="-198.4" y="-172.2" class="st9" width="44.8" height="9.5"/>
+		</g>
+	</g>
+</g>
+</svg>
