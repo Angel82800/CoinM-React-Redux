@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./imgs/react.png" width="100" height="100"/>
+  <img src="./imgs/react.png" width="200" height="200"/>
 </p>
 
 # CoinMetro Client
